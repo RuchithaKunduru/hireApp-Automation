@@ -1,0 +1,18 @@
+{
+  "cookies": [
+    {
+      "name": "hireAppAPISAccessToken",
+      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWxJZCI6InJ1Y2hpdGhhLnNhaUB0ZWNob2x1dGlvbi5jb20iLCJyb2xlIjoicmVjcnVpdGVyIiwiaWF0IjoxNzUzODcxOTgwLCJleHAiOjE3NTM5NTgzODB9.BfzsOJRoNYffKiq82mc69s84vJe_iOMkcg0Z-Kx2QSw",
+      "domain": "hire-dev.techolution.com",
+      "path": "/"
+    },
+    {
+      "name": "hireAppAPISRefreshToken",
+      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWxJZCI6InJ1Y2hpdGhhLnNhaUB0ZWNob2x1dGlvbi5jb20iLCJyb2xlIjoicmVjcnVpdGVyIiwiaWF0IjoxNzUzODcxOTgwfQ.QknqZLxzIZcWONnWZzjvdgBSke04krCm1Cd-5vS0zLk",
+      "domain": "hire-dev.techolution.com",
+      "path": "/"
+    }
+    
+  ],
+  "origins": []
+}

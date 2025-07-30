@@ -7,7 +7,8 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cucumber-js --require-module ts-node/register --require test/steps/**/*.ts",
+    "test:run": "npm run test"
   },
   "devDependencies": {
     "@cucumber/cucumber": "^12.1.0",

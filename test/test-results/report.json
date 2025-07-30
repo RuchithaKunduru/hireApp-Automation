@@ -1,0 +1,58 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "google-login-and-save-auth-state;manually-login-with-google-and-save-auth-state",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Manually login with Google and save auth state",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 662597399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user navigates to the login page",
+            "match": {
+              "location": "test\\steps\\googleLogin.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3138920299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "user should see the dashboard page",
+            "match": {
+              "location": "test\\steps\\googleLogin.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1095013699
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "google-login-and-save-auth-state",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Google Login and Save Auth State",
+    "tags": [],
+    "uri": "test\\features\\googleLogin.feature"
+  }
+]
