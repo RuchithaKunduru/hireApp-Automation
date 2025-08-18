@@ -1,0 +1,30 @@
+{
+    "jobDetails":{
+        "hiringRole": "QA Engineer"
+    },
+
+    "businessValues":{
+        "projectName": "QA HireAPP",
+        "clientName": "Luv Tulsidas",
+        "No.ofRequirements": "3"
+    },
+
+    "skills":{
+        "foundationalSkills": ["Cypress", "Test Cases", "Bug Report", "Manual Testing"],
+        "AdvanceSkills": ["playwright", "CI/CD Integration"]
+    },
+
+    "discoverySession": {
+        "candidateProfile": [
+        "Techolution is seeking a Quality Assurance Intern to join our innovative team. Who We’re Looking For:\n1) Recent graduates from the Class of 2024 or 2025\n2) Minimum of 3-6 months of prior internship experience in QA or Software Testing\n3) Passionate about maintaining the highest standards of software quality\n4) Eager to learn from industry experts and ready to dive into real-world QA challenges."
+        ]
+    },
+
+    "requirementDetails":{
+        "enterRequirement": "Automation Testing"
+    },
+
+    "explainReason":{
+        "whyItMatters": "Automation Testing is the process of using specialized tools and scripts to automatically execute test cases, compare actual outcomes with expected results, and report the results — without human intervention."
+    }
+}

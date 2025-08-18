@@ -4,6 +4,612 @@
     "elements": [
       {
         "description": "",
+        "id": "hireapp---job-creation-flow-end-to-end;navigating-to-create-job-page-from-dashboard",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Navigating to Create Job page from Dashboard",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1384673300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user is authenticated using stored cookies",
+            "match": {
+              "location": "test\\steps\\googleLogin.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5121138399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "user clicks on Create New Job button",
+            "match": {
+              "location": "test\\steps\\createNewJob.steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2589739400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "user should be redirected to the Create Job page",
+            "match": {
+              "location": "test\\steps\\createNewJob.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1566000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "user fills all basic job details",
+            "match": {
+              "location": "test\\steps\\createNewJob.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2058072000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "user fills business value details",
+            "match": {
+              "location": "test\\steps\\createNewJob.steps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 67604999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "user clicks on the \" Save & Next \" button",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:136"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 55881700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "basic job details should be saved successfully",
+            "match": {
+              "location": "test\\steps\\createNewJob.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2030271700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 17,
+            "name": "user enters foundational skills",
+            "match": {
+              "location": "test\\steps\\createNewJob.steps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 400338099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "user enters behavioural skills",
+            "match": {
+              "location": "test\\steps\\createNewJob.steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 709900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "user enters Advances skills",
+            "match": {
+              "location": "test\\steps\\createNewJob.steps.ts:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 189646799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "user clicks on the \" Save & Next \" button",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:136"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34591199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "all the skills should be saved successfully",
+            "match": {
+              "location": "test\\steps\\createNewJob.steps.ts:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 559199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 24,
+            "name": "user fills in discovery session details",
+            "match": {
+              "location": "test\\steps\\createNewJob.steps.ts:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1441214099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "user clicks on the \" Enhance with AI \" button",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:136"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29451399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "user should be able to see the \"Set tone of AI enhancement\"",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:171"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 644699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "user select tone as \"Professional\"",
+            "match": {
+              "location": "test\\steps\\createNewJob.steps.ts:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 426991699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "user clicks on the \"Enhance\" button",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:136"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26902100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 29,
+            "name": "user clicks on the \" Save & Next \" button",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:136"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 45649699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "discovery session should be saved successfully",
+            "match": {
+              "location": "test\\steps\\createNewJob.steps.ts:64"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13013201200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 33,
+            "name": "user should see \"Role Description\" section",
+            "match": {
+              "location": "test\\steps\\createNewJob.steps.ts:70"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 988399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "user should see \"Key Responsibilities\" section",
+            "match": {
+              "location": "test\\steps\\createNewJob.steps.ts:70"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 286499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "user should see \"Top Non-Negotiable Skills\" section",
+            "match": {
+              "location": "test\\steps\\createNewJob.steps.ts:70"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 236600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 36,
+            "name": "user should see \"Negotiable Skills\" section",
+            "match": {
+              "location": "test\\steps\\createNewJob.steps.ts:70"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 187299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 37,
+            "name": "user clicks on the \" Create ICP \" button",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:136"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12260563299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 40,
+            "name": "user should see \" Ideal Profile Traits \" section",
+            "match": {
+              "location": "test\\steps\\createNewJob.steps.ts:70"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 290700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 43,
+            "name": "user should be able to see \" ATM Curated \" section",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:156"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 509500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 45,
+            "name": "user clicks on the button \"Add Skill\"",
+            "match": {
+              "location": "test\\steps\\createNewJob.steps.ts:75"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3056572199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 46,
+            "name": "user enters skills or requirement details",
+            "match": {
+              "location": "test\\steps\\createNewJob.steps.ts:80"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 59825600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 47,
+            "name": "users enters \"Explain why this matters\"",
+            "match": {
+              "location": "test\\steps\\createNewJob.steps.ts:85"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 66891400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 48,
+            "name": "user selects significance score \"6\" from the drop down",
+            "match": {
+              "location": "test\\steps\\createNewJob.steps.ts:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 337315000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 49,
+            "name": "user clicks on the button \"Add\"",
+            "match": {
+              "location": "test\\steps\\createNewJob.steps.ts:75"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3046212599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 50,
+            "name": "user clicks on the button \"Enhance with AI\"",
+            "match": {
+              "location": "test\\steps\\createNewJob.steps.ts:75"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3056519200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 52,
+            "name": "user able to see the technical competence",
+            "match": {
+              "location": "test\\steps\\createNewJob.steps.ts:95"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 461500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 53,
+            "name": "user clicks on the button \"Download\"",
+            "match": {
+              "location": "test\\steps\\createNewJob.steps.ts:75"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6516039099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 56,
+            "name": "user clicks on the button \"Request for Approval\"",
+            "match": {
+              "location": "test\\steps\\createNewJob.steps.ts:75"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3048663400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 57,
+            "name": "user should be able to see the \"Request for approval\"",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:171"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 365400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 58,
+            "name": "user clicks on the \" Cancel \" button",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:136"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24356499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 60,
+            "name": "user clicks on the button \"Request for Approval\"",
+            "match": {
+              "location": "test\\steps\\createNewJob.steps.ts:75"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3054004899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 61,
+            "name": "user clicks on the button \"karthik.bolla@techolution.com\"",
+            "match": {
+              "location": "test\\steps\\createNewJob.steps.ts:75"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3052778200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 62,
+            "name": "user clicks on the \" Send Request \" button",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:136"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27722599
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "hireapp---job-creation-flow-end-to-end",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "HireApp - Job Creation Flow End-to-End",
+    "tags": [],
+    "uri": "test\\features\\createNewJob.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "profile-feature;user-validate-profile-section-on-main-dashboard",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "User Validate Profile section on main dashboard",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1210667799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user is authenticated using stored cookies",
+            "match": {
+              "location": "test\\steps\\googleLogin.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3017303599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "user should see the dashboard page",
+            "match": {
+              "location": "test\\steps\\googleLogin.steps.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 469299
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "profile-feature",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Profile feature",
+    "tags": [],
+    "uri": "test\\features\\dashboard.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
         "id": "google-login-and-save-auth-state;manually-login-with-google-and-save-auth-state",
         "keyword": "Scenario",
         "line": 3,
@@ -14,20 +620,20 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 662597399
+              "duration": 2073289199
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 4,
-            "name": "user navigates to the login page",
+            "name": "user is authenticated using stored cookies",
             "match": {
               "location": "test\\steps\\googleLogin.steps.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 3138920299
+              "duration": 3267161699
             }
           },
           {
@@ -36,11 +642,11 @@
             "line": 5,
             "name": "user should see the dashboard page",
             "match": {
-              "location": "test\\steps\\googleLogin.steps.ts:18"
+              "location": "test\\steps\\googleLogin.steps.ts:15"
             },
             "result": {
               "status": "passed",
-              "duration": 1095013699
+              "duration": 668499
             }
           }
         ],
@@ -54,5 +660,1929 @@
     "name": "Google Login and Save Auth State",
     "tags": [],
     "uri": "test\\features\\googleLogin.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "interview-feature;validate-dropdowns-of-interview-level-on-resume-page",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Validate Dropdowns of Interview Level on Resume Page",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1093843099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user is authenticated using stored cookies",
+            "match": {
+              "location": "test\\steps\\googleLogin.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3124871400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "user should see the dashboard page",
+            "match": {
+              "location": "test\\steps\\googleLogin.steps.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1298099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "user should see the job cards on dashboard page",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5005849900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "user should see the job card title \"SDET-1\"",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 770900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "user clicks on \"AI Resume Vetting\" button for job title \"SDET-1\"",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3439433699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "user should be able to see the Resume page",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5041716499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "user selects \"Interviews\" from the resume source dropdown",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 542175400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "user clicks the \"ruchithakumar22@gmail.com\" button",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:111"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9298534399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "user should be able to view the candidate details",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:116"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 571199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 19,
+            "name": "user clicks on the copy link button",
+            "match": {
+              "location": "test\\steps\\interview.steps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 56487600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "user should be able to see link copied toast message",
+            "match": {
+              "location": "test\\steps\\interview.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 418900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 23,
+            "name": "user should be able to see \"Interviews\" section",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:156"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 485900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "user should be able to see \"L2 Interview\"",
+            "match": {
+              "location": "test\\steps\\interview.steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 64834400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "user should see the Knowledge Details in L2 interview",
+            "match": {
+              "location": "test\\steps\\interview.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 478199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "user should be able to see \"Moved to L2 Interview\"",
+            "match": {
+              "location": "test\\steps\\interview.steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47721699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 29,
+            "name": "user should be able to see \"L1 Interview\"",
+            "match": {
+              "location": "test\\steps\\interview.steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 50048800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "user should see the Knowledge Details in L1 interview",
+            "match": {
+              "location": "test\\steps\\interview.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 548399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 31,
+            "name": "user clicks on the \"Gap Analysis\" button",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:136"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 78858099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "user should be able to see \"Skills\" section",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:156"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 323699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "user should be able to see \"Moved to L2 Interview\"",
+            "match": {
+              "location": "test\\steps\\interview.steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 59360300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 34,
+            "name": "user clicks on the \"View Summary\" button",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:136"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25618700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 37,
+            "name": "user clicks on the \"Schedule Interview\" button",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:136"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 44909599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "user should be able to see \"Schedule Interview\"",
+            "match": {
+              "location": "test\\steps\\interview.steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 51790900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 39,
+            "name": "user selects a date to schedule an interview",
+            "match": {
+              "location": "test\\steps\\interview.steps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 98176699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 40,
+            "name": "user clicks button \"20\"",
+            "match": {
+              "location": "test\\steps\\createNewJob.steps.ts:100"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 48283999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "user should be able to see the \"India Standard Time (UTC+5:30)\"",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:171"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 337299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 42,
+            "name": "user selects the start time to schedule an interview",
+            "match": {
+              "location": "test\\steps\\interview.steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 60145799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 43,
+            "name": "user clicks on \"Decrease hour\" toggle button",
+            "match": {
+              "location": "test\\steps\\interview.steps.ts:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 67722500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 44,
+            "name": "user clicks on \"Increase hour\" toggle button",
+            "match": {
+              "location": "test\\steps\\interview.steps.ts:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 56396199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 45,
+            "name": "user clicks on \"Increase minute\" toggle button",
+            "match": {
+              "location": "test\\steps\\interview.steps.ts:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 64446300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 46,
+            "name": "user clicks on \"Decrease minute\" toggle button",
+            "match": {
+              "location": "test\\steps\\interview.steps.ts:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 62502800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 47,
+            "name": "user clicks on the \"PM\" button",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:136"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29071199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 48,
+            "name": "user selects the end time to schedule an interview",
+            "match": {
+              "location": "test\\steps\\interview.steps.ts:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 50895099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 49,
+            "name": "user clicks button \"1 hr\"",
+            "match": {
+              "location": "test\\steps\\createNewJob.steps.ts:100"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26368900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 50,
+            "name": "user enters meeting subject \"Techolution QA - L3 Interview - Nilesh\"",
+            "match": {
+              "location": "test\\steps\\interview.steps.ts:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 69422700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 51,
+            "name": "user clicks button \"Enter Name to Add Interviewers\"",
+            "match": {
+              "location": "test\\steps\\createNewJob.steps.ts:100"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 102427599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 52,
+            "name": "user enters \"ruchitha\" as interviewer name",
+            "match": {
+              "location": "test\\steps\\interview.steps.ts:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 60418300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 53,
+            "name": "user clicks on the \"Schedule\" button",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:136"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25464699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 56,
+            "name": "user clicks on the \"Edit\" button",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:136"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 30013649999,
+              "error_message": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[text()=\"Edit\"]')\u001b[22m\n\n    at ResumePage.clickUpdateButton (C:\\Users\\SaiRuchithaKunduru\\Desktop\\hireApp-Automation\\test\\pages\\resumePage.ts:150:67)\n    at async CustomWorld.<anonymous> (C:\\Users\\SaiRuchithaKunduru\\Desktop\\hireApp-Automation\\test\\steps\\resume.steps.ts:138:3)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 57,
+            "name": "user clicks on the \"Delete\" button",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:136"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 58,
+            "name": "user clicks on the confirmation popup of \"Delete\" button",
+            "match": {
+              "location": "test\\steps\\interview.steps.ts:79"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 59,
+            "name": "user successfully deletes the scheduled interview",
+            "match": {
+              "location": "test\\steps\\interview.steps.ts:84"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 64,
+            "name": "user clicks on Notification section",
+            "match": {
+              "location": "test\\steps\\interview.steps.ts:64"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 65,
+            "name": "user should be able to see noticiations header",
+            "match": {
+              "location": "test\\steps\\interview.steps.ts:69"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "interview-feature",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Interview feature",
+    "tags": [],
+    "uri": "test\\features\\interview.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "profile-feature;user-validate-profile-section-on-main-dashboard",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "User Validate Profile section on main dashboard",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1193830699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user is authenticated using stored cookies",
+            "match": {
+              "location": "test\\steps\\googleLogin.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3070044999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "user should see the dashboard page",
+            "match": {
+              "location": "test\\steps\\googleLogin.steps.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 389399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "user clicks on the profile button",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2522241399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "user clicks on the \" Team Members \" button",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:136"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 887520400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "user should be able to see the title \"Kunduru Sai Ruchitha\"",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 381399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "user should be able to see the title \"ruchitha.sai@techolution.com\"",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 125499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "user should be able to see the title \"ATM Specialist \"",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 169900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "user should be able to see \"Connect with your Google Drive\" section",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:156"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 161800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "user go back to previous section",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25270799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 20,
+            "name": "user should see the job cards on dashboard page",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5008824699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "user should see the job card title \"SDET-1\"",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 378200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "user clicks on the 3 dot button for \"SDET-1\" Job card",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 59600499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "user clicks on the \" Settings \" button",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:136"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 89273400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "user able to see \" Settings - Video Resume \" section",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 674999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "user clicks on the button \"Video Resume Questions\"",
+            "match": {
+              "location": "test\\steps\\createNewJob.steps.ts:75"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3069492900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "user should be able to see the title \" Introduction \"",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 257600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 29,
+            "name": "user clicks on edit button for title \"Introduction\"",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 85280200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "user enters question \"Provide a brief overview of your background, qualifications, and experience?\"",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 374026899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "user clicks on the \" Update \" button",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:136"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 43779999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "user should be able to see the title \"Core Skills\"",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 429299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 34,
+            "name": "user clicks on edit button for title \"Core Skills\"",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1562348300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "user enters question \"What are your core strengths and how do you apply them at work?\"",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 439930499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 36,
+            "name": "user clicks on the \" Update \" button",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:136"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28467300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "user should be able to see the title \"Problem Solving\"",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 355299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 39,
+            "name": "user clicks on edit button for title \"Problem Solving\"",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1562307100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 40,
+            "name": "user enters question \"Can you describe a problem you solved and how you approached it?\"",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 439823499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "user clicks on the \" Update \" button",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:136"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30540399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 43,
+            "name": "user should be able to see the title \"Future Vision\"",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 314099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 44,
+            "name": "user clicks on edit button for title \"Future Vision\"",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1542225199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 45,
+            "name": "user enters question \"Where do you see your life in 10 years?\"",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 428463799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 46,
+            "name": "user clicks on the \" Update \" button",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:136"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30427300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 48,
+            "name": "user should be able to see the title \"When Can You Join\"",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 425199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 49,
+            "name": "user clicks on edit button for title \"When Can You Join\"",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1569076200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 50,
+            "name": "user enters question \"What is your earliest possible joining date?\"",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 371282300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 51,
+            "name": "user clicks on the \" Update \" button",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:136"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31055300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 52,
+            "name": "user clicks on the button \"Video Resume Questions\"",
+            "match": {
+              "location": "test\\steps\\createNewJob.steps.ts:75"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3044261700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 55,
+            "name": "user clicks on the button \"Red Flags\"",
+            "match": {
+              "location": "test\\steps\\createNewJob.steps.ts:75"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3089187699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 56,
+            "name": "user should be able to see the \"Notice Period\"",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:171"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 352500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 57,
+            "name": "user should be able to see the \"Negative Remarks\"",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:171"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 462100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 60,
+            "name": "user clicks on the \" + Add New \" button",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:136"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 43133999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 61,
+            "name": "user should be able to see the \"Add Red Flags\"",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:171"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 247600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 62,
+            "name": "user clicks on the \" + Add Custom Flag \" button",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:136"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 68242800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 63,
+            "name": "user enters title as \"Greetings\"",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1034089800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 64,
+            "name": "user enters description as \"Hey Hi Hello\"",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 93949400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 65,
+            "name": "user enters when to apply as \"When someone greets as Hello\"",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 99812199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 66,
+            "name": "user enters when not to apply as \"When someone greets as Namaste\"",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 190271000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 67,
+            "name": "user clicks priority as \"low\"",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:64"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 64797699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 68,
+            "name": "user clicks scope as current role",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 79383700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 69,
+            "name": "user clicks on the Add button",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:74"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 69644499
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "profile-feature",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Profile feature",
+    "tags": [],
+    "uri": "test\\features\\profile.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "resume-feature;validate-dropdowns-of-interview-level-on-resume-page",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Validate Dropdowns of Interview Level on Resume Page",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1333971500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user is authenticated using stored cookies",
+            "match": {
+              "location": "test\\steps\\googleLogin.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3595253300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "user should see the dashboard page",
+            "match": {
+              "location": "test\\steps\\googleLogin.steps.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 230899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "user should see the job cards on dashboard page",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5010010800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "user should see the job card title \"SDET-1\"",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 538900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "user clicks on \"AI Resume Vetting\" button for job title \"SDET-1\"",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1815057299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "user should be able to see the Resume page",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5026433300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "user selects \"AI Resume Vetting\" from the resume source dropdown",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 231376700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "user selects \"All\" from the status dropdown",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 380118600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "user selects \"Latest\" from the sort dropdown",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 210646399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "user able to see all the resumes in the table",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 489400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "user clicks on \"Manage Notes\" button",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:121"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30076999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "user click on \"Add Notes\" button of the notes",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:66"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 452285899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "user should be able to add Notes",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 785900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "user enters notes \"This is related to QA\" in the notes field",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17468900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "user click on \"Save\" button of the notes",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:66"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 139432000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "user should be able to see the added note in the notes section",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:96"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 399200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 25,
+            "name": "user edits the manage notes",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:101"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2422042900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "user updates \"This is related to QA Automation\" in the notes field",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:106"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17310200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "user click on \"Save\" button of the notes",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:66"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 50760299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "user should be able to see the updated message",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:71"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5372700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 29,
+            "name": "user deletes the manage notes",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:76"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2394238000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "user should be able to see the deleted message",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:81"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5105499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 33,
+            "name": "user clicks the \" ruchithakumar22@gmail.com \" button",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:111"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 112154099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 34,
+            "name": "user should be able to view the candidate details",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:116"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 355999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 35,
+            "name": "user clicks on \"Edit\" button",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:121"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3020227299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 36,
+            "name": "user able to see the update candidate information form",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:126"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 270400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
+            "name": "user enters the \"Kunduru Ruchitha\" in the candidate name field",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:131"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22420099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "user clicks on the \" Update \" button",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:136"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 68003599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 39,
+            "name": "user should see the success message \"Candidate details updated successfully\"",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:151"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 955008999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 42,
+            "name": "user click on View Resume button",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:141"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 150227000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 43,
+            "name": "user should be able to see the resume file",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:146"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1098054999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 46,
+            "name": "user clicks on the \" Overview \" button",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:136"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24425000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 47,
+            "name": "user should be able to see \"summary\" section",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:156"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 304999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 48,
+            "name": "user should be able to see summary details",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:161"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 386900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 50,
+            "name": "user should be able to see \"Key Strengths\" section",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:156"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 145500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 51,
+            "name": "user should be able to see \"Gaps or Concerns\" section",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:156"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 142400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 52,
+            "name": "user should be able to see gaps or concerns details",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:166"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 530900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 55,
+            "name": "user clicks on the \" ICP Skill Matrix \" button",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:136"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 44410399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 56,
+            "name": "user should be able to see \"ICP Skill Matrix\" section",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:156"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 796000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 57,
+            "name": "user should be able to see the \"Technical Skills\"",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:171"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 143299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 60,
+            "name": "user clicks on the \" Follow Up Questions \" button",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:136"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 32063300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 61,
+            "name": "user should be able to see \"Follow Up Questions\" section",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:156"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 302799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 64,
+            "name": "user clicks on the \" Add Follow-up \" button",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:136"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21645300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 65,
+            "name": "user enters question \"What is mean by cypress?\" in the question field",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:181"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23658499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 66,
+            "name": "user clicks on the \" Save \" button",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:136"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30421600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 67,
+            "name": "user should be able to see \"User Added Questions\" section",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:156"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 344399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 68,
+            "name": "user clicks on \"Delete\" button",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:121"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1369919600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 69,
+            "name": "added question should be removed from the list",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:186"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5894000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "resume-feature",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Resume feature",
+    "tags": [],
+    "uri": "test\\features\\resume.feature"
   }
 ]

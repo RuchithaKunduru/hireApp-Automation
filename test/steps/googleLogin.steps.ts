@@ -8,14 +8,11 @@ let context: BrowserContext;
 let loginPage: LoginPage;
 
 Given('user is authenticated using stored cookies', async function () {
-  const browser = this.browser as Browser;
-  context = await browser.newContext({storageState: 'google-auth.json',});
-  page = await context.newPage();
-  loginPage = new LoginPage(page);
-  await page.goto(testData.baseUrl);
+  const loginPage = new LoginPage(this.page!);
+  await this.page.goto(testData.baseUrl);
 });
 
 Then('user should see the dashboard page', async function () {
+  const loginPage = new LoginPage(this.page!);
   await loginPage.verifyDashboardVisible();
 });
-
