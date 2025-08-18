@@ -4,43 +4,655 @@
     "elements": [
       {
         "description": "",
-        "id": "google-login-and-save-auth-state;manually-login-with-google-and-save-auth-state",
+        "id": "profile-feature;user-validate-profile-section-on-main-dashboard",
         "keyword": "Scenario",
         "line": 3,
-        "name": "Manually login with Google and save auth state",
+        "name": "User Validate Profile section on main dashboard",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 662597399
+              "duration": 1147083399
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 4,
-            "name": "user navigates to the login page",
+            "line": 5,
+            "name": "user is authenticated using stored cookies",
             "match": {
               "location": "test\\steps\\googleLogin.steps.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 3138920299
+              "duration": 1982176099
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 5,
+            "line": 6,
             "name": "user should see the dashboard page",
             "match": {
-              "location": "test\\steps\\googleLogin.steps.ts:18"
+              "location": "test\\steps\\googleLogin.steps.ts:15"
             },
             "result": {
               "status": "passed",
-              "duration": 1095013699
+              "duration": 667400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "user clicks on the profile button",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3543854900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "user clicks on the \" Team Members \" button",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:136"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 889770599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "user should be able to see the title \"Kunduru Sai Ruchitha\"",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1248900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "user should be able to see the title \"ruchitha.sai@techolution.com\"",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 293900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "user should be able to see the title \"ATM Specialist \"",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 148199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "user should be able to see \"Connect with your Google Drive\" section",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:156"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 735099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "user go back to previous section",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20460200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 20,
+            "name": "user should see the job cards on dashboard page",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5010134500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "user should see the job card title \"SDET-1\"",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 338200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "user clicks on the 3 dot button for \"SDET-1\" Job card",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:24"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 30006614999,
+              "error_message": "page.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//div[contains(., \"SDET-1\") and contains(@class, \"job-card\")]//button[contains(@class, \"card-menu-btn\")][2]')\u001b[22m\n\n    at ProfilePage.click3DotButton (C:\\Users\\Pavan Penumajji\\Downloads\\hireApp-Automation\\hireApp-Automation\\test\\pages\\profilePage.ts:20:21)\n    at CustomWorld.<anonymous> (C:\\Users\\Pavan Penumajji\\Downloads\\hireApp-Automation\\hireApp-Automation\\test\\steps\\profile.steps.ts:26:23)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "user clicks on the \" Settings \" button",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:136"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "user able to see \" Settings - Video Resume \" section",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:29"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "user clicks on the button \"Video Resume Questions\"",
+            "match": {
+              "location": "test\\steps\\createNewJob.steps.ts:75"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "user should be able to see the title \" Introduction \"",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:14"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 29,
+            "name": "user clicks on edit button for title \"Introduction\"",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:34"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "user enters question \"Provide a brief overview of your background, qualifications, and experience?\"",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:39"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "user clicks on the \" Update \" button",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:136"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "user should be able to see the title \"Core Skills\"",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:14"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 34,
+            "name": "user clicks on edit button for title \"Core Skills\"",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:34"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "user enters question \"What are your core strengths and how do you apply them at work?\"",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:39"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 36,
+            "name": "user clicks on the \" Update \" button",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:136"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "user should be able to see the title \"Problem Solving\"",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:14"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 39,
+            "name": "user clicks on edit button for title \"Problem Solving\"",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:34"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 40,
+            "name": "user enters question \"Can you describe a problem you solved and how you approached it?\"",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:39"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "user clicks on the \" Update \" button",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:136"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 43,
+            "name": "user should be able to see the title \"Future Vision\"",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:14"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 44,
+            "name": "user clicks on edit button for title \"Future Vision\"",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:34"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 45,
+            "name": "user enters question \"Where do you see your life in 10 years?\"",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:39"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 46,
+            "name": "user clicks on the \" Update \" button",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:136"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 48,
+            "name": "user should be able to see the title \"When Can You Join\"",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:14"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 49,
+            "name": "user clicks on edit button for title \"When Can You Join\"",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:34"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 50,
+            "name": "user enters question \"What is your earliest possible joining date?\"",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:39"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 51,
+            "name": "user clicks on the \" Update \" button",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:136"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 52,
+            "name": "user clicks on the button \"Video Resume Questions\"",
+            "match": {
+              "location": "test\\steps\\createNewJob.steps.ts:75"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 55,
+            "name": "user clicks on the button \"Red Flags\"",
+            "match": {
+              "location": "test\\steps\\createNewJob.steps.ts:75"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 56,
+            "name": "user should be able to see the \"Notice Period\"",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:171"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 57,
+            "name": "user should be able to see the \"Negative Remarks\"",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:171"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 60,
+            "name": "user clicks on the \" + Add New \" button",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:136"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 61,
+            "name": "user should be able to see the \"Add Red Flags\"",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:171"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 62,
+            "name": "user clicks on the \" + Add Custom Flag \" button",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:136"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 63,
+            "name": "user enters title as \"Greetings\"",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:44"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 64,
+            "name": "user enters description as \"Hey Hi Hello\"",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:49"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 65,
+            "name": "user enters when to apply as \"When someone greets as Hello\"",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:54"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 66,
+            "name": "user enters when not to apply as \"When someone greets as Namaste\"",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:59"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 67,
+            "name": "user clicks priority as \"low\"",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:64"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 68,
+            "name": "user clicks scope as current role",
+            "match": {
+              "location": "test\\steps\\profile.steps.ts:69"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 69,
+            "name": "user clicks on the \" Add \" button",
+            "match": {
+              "location": "test\\steps\\resume.steps.ts:136"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
             }
           }
         ],
@@ -48,11 +660,106 @@
         "type": "scenario"
       }
     ],
-    "id": "google-login-and-save-auth-state",
+    "id": "profile-feature",
     "line": 1,
     "keyword": "Feature",
-    "name": "Google Login and Save Auth State",
+    "name": "Profile feature",
     "tags": [],
-    "uri": "test\\features\\googleLogin.feature"
+    "uri": "test\\features\\profile.feature"
+  },
+  {
+    "description": "  As a user\n  I want to remove access from an ATM\n  So that I can ensure the user no longer has access",
+    "elements": [
+      {
+        "description": "",
+        "id": "dashboard-atm-access-removal;removing-atm-access",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Removing ATM access",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 839071700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "user is authenticated using stored cookies",
+            "match": {
+              "location": "test\\steps\\googleLogin.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2086061699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I click on the plus button",
+            "match": {
+              "location": "test\\steps\\dashboard.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8146166400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I click the Viewer button",
+            "match": {
+              "location": "test\\steps\\dashboard.steps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 408316800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I click the Remove Access button",
+            "match": {
+              "location": "test\\steps\\dashboard.steps.ts:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 266477200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I click the Done button",
+            "match": {
+              "location": "test\\steps\\dashboard.steps.ts:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 57025199
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "dashboard-atm-access-removal",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Dashboard ATM access removal",
+    "tags": [],
+    "uri": "test\\features\\removeaccess.feature"
   }
 ]

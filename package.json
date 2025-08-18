@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "license": "ISC",
-  "author": "Ruchitha",
+  "author": "Pavan Penumajji",
   "type": "commonjs",
   "main": "index.js",
-  "scripts": {
-    "test": "cucumber-js --require-module ts-node/register --require test/steps/**/*.ts",
-    "test:run": "npm run test"
-  },
+ "scripts": {
+  "test": "cucumber-js --require-module ts-node/register --require test/steps/**/*.ts",
+  "test:run": "npm run test"
+},
+
   "devDependencies": {
     "@cucumber/cucumber": "^12.1.0",
     "@playwright/test": "^1.54.1",
