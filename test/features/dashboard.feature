@@ -5,10 +5,16 @@ Feature: Dashboard ATM selection and email validation
   Background:
     Given user is authenticated using stored cookies
 
-  Scenario: addding an Atm and validating email
+  Scenario: adding an Atm and validating email
     When I click on the plus button
     And I open the select ATM popup
     And I search for the ATM with text "Ruchitha"
     And I select the ATM name
     Then I validate the ATM email
     And I click the Done button
+
+
+Feature: Profile feature
+  Scenario: User Validate Profile section on main dashboard
+    Given user is authenticated using stored cookies
+    Then user should see the dashboard page
