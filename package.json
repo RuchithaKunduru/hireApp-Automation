@@ -8,7 +8,8 @@
   "main": "index.js",
   "scripts": {
     "test": "cucumber-js --require-module ts-node/register --require test/steps/**/*.ts",
-    "test:run": "npm run test"
+    "report": "ts-node utils/reporter.ts && cp -r test/test-report html-report",
+    "test:run": "npm run test && npm run report"
   },
   "devDependencies": {
     "@cucumber/cucumber": "^12.1.0",

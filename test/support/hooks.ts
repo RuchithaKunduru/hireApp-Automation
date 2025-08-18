@@ -9,6 +9,6 @@ Before(async function (this: CustomWorld) {
   await this.initBrowser();
 });
 
-// After(async function (this: CustomWorld) {
-//   await this.closeBrowser();
-// });
+After(async function (this: CustomWorld) {
+  await this.closeBrowser();
+});
