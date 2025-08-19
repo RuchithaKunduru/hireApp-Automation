@@ -1,18 +1,12 @@
 {
   "cookies": [
     {
-      "name": "hireAppAPISAccessToken",
-      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWxJZCI6InJ1Y2hpdGhhLnNhaUB0ZWNob2x1dGlvbi5jb20iLCJyb2xlIjoicmVjcnVpdGVyIiwiaWF0IjoxNzUzODcxOTgwLCJleHAiOjE3NTM5NTgzODB9.BfzsOJRoNYffKiq82mc69s84vJe_iOMkcg0Z-Kx2QSw",
-      "domain": "hire-dev.techolution.com",
-      "path": "/"
-    },
-    {
-      "name": "hireAppAPISRefreshToken",
-      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWxJZCI6InJ1Y2hpdGhhLnNhaUB0ZWNob2x1dGlvbi5jb20iLCJyb2xlIjoicmVjcnVpdGVyIiwiaWF0IjoxNzUzODcxOTgwfQ.QknqZLxzIZcWONnWZzjvdgBSke04krCm1Cd-5vS0zLk",
-      "domain": "hire-dev.techolution.com",
+      "name": "LLMAPISessionToken",
+      "value": "eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..v59TCtEhoyA158-M.Rl6uBdsxYUILhnUVKTYiuYj1vrgXdAFl0HeEhwlQDA6XZloGYvEmCYAjmoQRLo_pQksyyZhPkWLXR4eC-7ak-FqwiDl4OAoFT88dsSbi6izFG0fOGsfKNjSzri1OLIbTuvgYWPV7EtuxFBUJgthWM_Z8IvZXATFFGc04JmnWvOkWTkxC4V8DrPZtAJbiI4MIQD54u_sz-NWbKWUdyiN_RU4EyvndJe9F8jtEh3m6o8GI8VCdaeTEsfAUUH7sF6z9wdDRsA0AkUnxpnsgTP2KwXGN2ukCDDaZzwBAVKHEDuF5P9ECx_RzycYIqRyCioJ4cuK4MMNj9UKo0LSwz77s4R9fK6vT6XBpdAUPgYVFSar4yy6LZJYo_SBikpHCIiM38yCOwMANxRSDa5yA48xJ-6EBO2hgBEwNVMd6FHZ9n4w8wOGJ3PI2vYQ0coTKiytGWzXZ3xxgmjeRagP7QK6IvcBrKONVYf30jeIpdbg9La_WflNUB0qVIrvhpJLCobYwpDlHymDumkSIzSdaMbWjckYLvPsNa26Sy1ncfQHguu4qew4xnCoK_dpAsUcY.B1DaXhhXCFTohClpDJJWqw",
+      "domain": "https://dev-egpt.techo.camp/dashboard?name=testing12&organizationName=techolution&edit=true",
       "path": "/"
     }
-    
+   
   ],
   "origins": []
 }

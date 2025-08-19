@@ -4,43 +4,181 @@
     "elements": [
       {
         "description": "",
-        "id": "google-login-and-save-auth-state;manually-login-with-google-and-save-auth-state",
+        "id": "edit-feature;verify-project-details-in-edit-section",
         "keyword": "Scenario",
         "line": 3,
-        "name": "Manually login with Google and save auth state",
+        "name": "Verify Project Details in Edit Section",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 662597399
+              "duration": 905288749
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 4,
-            "name": "user navigates to the login page",
+            "name": "user am on the login page",
             "match": {
-              "location": "test\\steps\\googleLogin.steps.ts:10"
+              "location": "test/steps/edit.steps.ts:6"
             },
             "result": {
               "status": "passed",
-              "duration": 3138920299
+              "duration": 5962956416
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "user login with valid credentials",
+            "match": {
+              "location": "test/steps/edit.steps.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4889204457
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "user search AI Assistant \"anitaassistant\"",
+            "match": {
+              "location": "test/steps/edit.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20859542
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 5,
-            "name": "user should see the dashboard page",
+            "line": 8,
+            "name": "user should see details about assistant",
             "match": {
-              "location": "test\\steps\\googleLogin.steps.ts:18"
+              "location": "test/steps/edit.steps.ts:35"
             },
             "result": {
               "status": "passed",
-              "duration": 1095013699
+              "duration": 2828459957
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "user clicks on assistant Project details",
+            "match": {
+              "location": "test/steps/edit.steps.ts:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 43614459
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "user should see assistant Project page",
+            "match": {
+              "location": "test/steps/edit.steps.ts:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5136310249
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "user clicks on edit link",
+            "match": {
+              "location": "test/steps/edit.steps.ts:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 127150917
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "user should see edit page",
+            "match": {
+              "location": "test/steps/edit.steps.ts:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 331936000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "user edit \"Project Description\" as \"Functionality testing on LLM studio\"",
+            "match": {
+              "location": "test/steps/edit.steps.ts:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8534374
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "user should see save button enabled",
+            "match": {
+              "location": "test/steps/edit.steps.ts:66"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5882040
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "user clicks on save button",
+            "match": {
+              "location": "test/steps/edit.steps.ts:71"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 74833167
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "user should see success message",
+            "match": {
+              "location": "test/steps/edit.steps.ts:76"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 802952000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 206167
             }
           }
         ],
@@ -48,11 +186,11 @@
         "type": "scenario"
       }
     ],
-    "id": "google-login-and-save-auth-state",
+    "id": "edit-feature",
     "line": 1,
     "keyword": "Feature",
-    "name": "Google Login and Save Auth State",
+    "name": "Edit Feature",
     "tags": [],
-    "uri": "test\\features\\googleLogin.feature"
+    "uri": "test/features/edit.feature"
   }
 ]

@@ -1,21 +1,22 @@
 {
-  "name": "hireapp",
+  "name": "playwright-cucumber-ecommerce",
   "version": "1.0.0",
   "description": "",
-  "license": "ISC",
-  "author": "Ruchitha",
-  "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js --require-module ts-node/register --require test/steps/**/*.ts",
-    "test:run": "npm run test"
+    "test": "cucumber-js --require-module ts-node/register --require test/steps/**/*.ts --format json:test/test-results/report.json",
+    "report": "ts-node utils/reporter.ts && cp -r test/test-report html-report",
+    "test:run": "npm run test && npm run report"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
   "devDependencies": {
-    "@cucumber/cucumber": "^12.1.0",
+    "@cucumber/cucumber": "^11.3.0",
     "@playwright/test": "^1.54.1",
-    "cucumber-html-reporter": "^7.2.0",
-    "dotenv": "^17.2.1",
-    "playwright": "^1.54.1",
+    "@types/node": "^24.0.13",
+    "multiple-cucumber-html-reporter": "^3.9.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   }
