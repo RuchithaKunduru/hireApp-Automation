@@ -99,3 +99,26 @@ When('I click the Archive Job button', async function () {
   const dashboardPage = new DashboardPage(this.page);
   await dashboardPage.archiveButton();
 });
+// redirection of video resume and resume
+When('i click on the videoresume button', async function () {
+  const dashboardPage = new DashboardPage(this.page);
+  await dashboardPage.clickVideoResumeButton();
+});
+Then('the url should contain {string} for videoresume', async function(expected: string) {
+  const dashboardPage = new DashboardPage(this.page);
+  await dashboardPage.verifyUrlContains(expected);
+});
+When('i click on the back button', async function () {
+  const dashboardPage = new DashboardPage(this.page);
+  await dashboardPage.clickBackButton();
+});
+
+When('i click on the resume button', async function () {
+  const dashboardPage = new DashboardPage(this.page);
+  await dashboardPage.clickResumeButton();
+});
+
+Then('the url should contain {string} for resume', async function(expected: string) {
+  const dashboardPage = new DashboardPage(this.page);
+  await dashboardPage.verifyUrlContains(expected);
+});

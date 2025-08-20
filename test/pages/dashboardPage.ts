@@ -68,5 +68,19 @@ async threeDotsButton() {
 async archiveButton() {
     await this.page.click(dashbaordLocators.archiveButton);
   }
-
+// redirection of the resume and video resume
+async clickVideoResumeButton() {  
+    await this.page.click(dashbaordLocators.videoresumebutton);
+  }   
+async clickResumeButton() {  
+    await this.page.click(dashbaordLocators.resumebutton);
+  }
+async clickBackButton() {  
+    await this.page.click(dashbaordLocators.backbutton);
+  }
+async verifyUrlContains(expected: string) {
+    await this.page.waitForLoadState("domcontentloaded");
+    const currentUrl = this.page.url();
+    expect(currentUrl).toContain(expected);
+  }
 }
