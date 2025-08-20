@@ -1,60 +1,55 @@
-import { When, Then } from '@cucumber/cucumber';
-import { editjdPage } from '../pages/editjdPage';
+import { When, Then, Before } from '@cucumber/cucumber';
+import { EditJdPage } from '../pages/editjdPage';
 import { Page, BrowserContext } from "playwright";
 import { expect } from '@playwright/test';
 
-let editjd:editjdPage;
+let editJdPage: EditJdPage;
 let page: Page;
 let context: BrowserContext;
 
+Before(async function () {
+  // Initialize once per scenario
+  editJdPage = new EditJdPage(this.page);
+});
+
 When('i click on viewdeatilsbutton', async function() {
-    const editjdpage = new editjdPage(this.page);
-    await editjdpage.clickViewDetails();
+  await editJdPage.clickViewDetails();
 });
 
 When('i click on editbasicdeatilsbutton', async function() {
-    const editjdpage = new editjdPage(this.page);
-    await editjdpage.clickEditBasicDetails();
+  await editJdPage.clickEditBasicDetails();
 });
 
 When('i select expertise as mid level', async function() {
-    const editjdpage = new editjdPage(this.page);
-    await editjdpage.selectExpertiseMidLevel();
+  await editJdPage.selectExpertiseMidLevel();
 });
 
 When('i select location as Hyderabad', async function() {
-    const editjdpage = new editjdPage(this.page);
-    await editjdpage.selectLocation();
+  await editJdPage.selectLocation();
 });
 
 Then('i save the changes', async function() {
-    const editjdpage = new editjdPage(this.page);
-    await editjdpage.saveChanges();
+  await editJdPage.saveChanges();
 });
 
 Then('i confirm the save changes', async function() {
-    const editjdpage = new editjdPage(this.page);
-    await editjdpage.confirmSaveChanges();
+  await editJdPage.confirmSaveChanges();
 });
 
 Then('the expertise should be updated to Mid-Level', async function () {
-    const editjdpage = new editjdPage(this.page);
-    const expertise = await editjdpage.getExpertiseValue();
-    expect(expertise).toContain('Mid-Level');
+  const expertise = await editJdPage.getExpertiseValue();
+  expect(expertise).toContain('Mid-Level');
 });
 
 Then('the location should be updated to Hyderabad', async function () {
-    const editjdpage = new editjdPage(this.page);
-    const location = await editjdpage.getLocationValue();
-    expect(location).toContain('Hyderabad');
+  const location = await editJdPage.getLocationValue();
+  expect(location).toContain('Hyderabad');
 });
 
 Then('i click on regenerate button', async function() {
-    const editjdpage = new editjdPage(this.page);
-    await editjdpage.clickRegenerateButton();
+  await editJdPage.clickRegenerateButton();
 });
 
 Then('i click on yes button', async function() {
-    const editjdpage = new editjdPage(this.page);
-    await editjdpage.clickYesButton();
+  await editJdPage.clickYesButton();
 });
