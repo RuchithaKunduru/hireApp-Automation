@@ -135,11 +135,11 @@ When('I select AI Engineering from the dropdown', async function () {
   await dashboardPage.aiEngineering();
 });
 
-// ✅ Dynamic locator usage
+//  Dynamic locator usage
 Then('I should see job role {string}', async function (roleName: string) {
   const dashboardPage = new DashboardPage(this.page);
 
-   // ✅ log all roles currently on the page
+   //  log all roles currently on the page
   const roles = await dashboardPage.getAllJobRoleNames();
   console.log("Available roles after filter:", roles);
 
@@ -165,7 +165,7 @@ When('I search for job role {string}', async function (searchText: string) {
   const dashboardPage = new DashboardPage(this.page);
   const roles = await dashboardPage.searchJobRole(searchText);
 
-  console.log(`✅ Roles returned for search '${searchText}':`, roles);
+  console.log(` Roles returned for search '${searchText}':`, roles);
   this.searchResults = roles; // store results in world for next validation
 });
 
@@ -173,8 +173,8 @@ Then('I should see the following job roles after search:', async function (dataT
   const expectedRoles = dataTable.raw().flat(); // expected list from feature file
   const actualRoles = this.searchResults;
 
-  console.log("🔎 Expected roles:", expectedRoles);
-  console.log("🔎 Actual roles:", actualRoles);
+  console.log(" Expected roles:", expectedRoles);
+  console.log(" Actual roles:", actualRoles);
 
   for (const role of expectedRoles) {
     expect(actualRoles).toContain(role);
