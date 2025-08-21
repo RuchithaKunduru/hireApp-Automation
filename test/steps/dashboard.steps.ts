@@ -1,7 +1,8 @@
 import { When, Then } from '@cucumber/cucumber';
 import { DashboardPage } from '../pages/dashboardPage';
 import dashboardData from '../test-data/dashbaord.json';
-import { Page, BrowserContext } from "playwright";
+import { Page, BrowserContext, } from "playwright";
+import { expect } from '@playwright/test';
 
 let dashbaord: DashboardPage;
 let page: Page;
@@ -121,4 +122,61 @@ When('i click on the resume button', async function () {
 Then('the url should contain {string} for resume', async function(expected: string) {
   const dashboardPage = new DashboardPage(this.page);
   await dashboardPage.verifyUrlContains(expected);
+});
+
+// Filter locators
+When('I click on the job category dropdown', async function () {
+  const dashboardPage = new DashboardPage(this.page);
+  await dashboardPage.jobCategoryDropdown();
+});
+
+When('I select AI Engineering from the dropdown', async function () {
+  const dashboardPage = new DashboardPage(this.page);
+  await dashboardPage.aiEngineering();
+});
+
+//  Dynamic locator usage
+Then('I should see job role {string}', async function (roleName: string) {
+  const dashboardPage = new DashboardPage(this.page);
+
+   //  log all roles currently on the page
+  const roles = await dashboardPage.getAllJobRoleNames();
+  console.log("Available roles after filter:", roles);
+
+  const jobRoleText = await dashboardPage.getJobRoleByName(roleName);
+  console.log(`Job Role found for '${roleName}':`, jobRoleText);
+  expect(jobRoleText).toContain(roleName);
+});
+
+When('I click on the reset button', async function () {
+  const dashboardPage = new DashboardPage(this.page);
+  await dashboardPage.resetButton();
+});
+
+Then('the job category should be reset to All', async function () {
+  
+  const dashboardPage = new DashboardPage(this.page);
+  const category = await dashboardPage.getSelectedJobCategory();
+  expect(category).toContain('All');
+});
+
+// Search functionality
+When('I search for job role {string}', async function (searchText: string) {
+  const dashboardPage = new DashboardPage(this.page);
+  const roles = await dashboardPage.searchJobRole(searchText);
+
+  console.log(` Roles returned for search '${searchText}':`, roles);
+  this.searchResults = roles; // store results in world for next validation
+});
+
+Then('I should see the following job roles after search:', async function (dataTable) {
+  const expectedRoles = dataTable.raw().flat(); // expected list from feature file
+  const actualRoles = this.searchResults;
+
+  console.log(" Expected roles:", expectedRoles);
+  console.log(" Actual roles:", actualRoles);
+
+  for (const role of expectedRoles) {
+    expect(actualRoles).toContain(role);
+  }
 });
