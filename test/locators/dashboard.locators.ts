@@ -27,6 +27,14 @@ copyvideoresumelink:"//button[normalize-space()='Copy Video Resume Link']",
 threeDotsButton: "(//button[@class='card-menu-btn ng-star-inserted'])[3]",
 archiveButton: "//button[normalize-space()='Archive Job']",
 
+// view deatils 
+viewdeatils :"(//button[contains(text(),'View Details')])[1]",
+editbasicdeatils :"(//button[contains(text(),'Edit')])[1]",
 
+//video resume and resume locators 
+videoresumebutton: "//app-job-card[1]//div[1]//div[1]//div[1]//a[1]",
+backbutton :"//div[@class='back-btn']",
+resumebutton :"//app-job-card[1]//div[1]//div[1]//div[1]//a[2]//*[name()='svg']",
 
+//logout 
 }
