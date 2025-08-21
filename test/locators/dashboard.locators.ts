@@ -36,5 +36,16 @@ videoresumebutton: "//app-job-card[1]//div[1]//div[1]//div[1]//a[1]",
 backbutton :"//div[@class='back-btn']",
 resumebutton :"//app-job-card[1]//div[1]//div[1]//div[1]//a[2]//*[name()='svg']",
 
-//logout 
+//Filter locators
+jobCategoryDropdown:"//span[@id='pr_id_1_label']",
+aiEngineeringOption:"//li[@aria-label='AI Engineering']",
+appliedJobCategory: "//span[normalize-space()='AI Engineering']",
+allJobRoleNames: "//div/h2[@class='job-role-name']",
+jobRoleName: (roleName: string) => `//h2[@class='job-role-name' and normalize-space(text())='${roleName}']`,
+resetButton:"//button[normalize-space()='Reset']",
+
+// search functionality
+SearchBar:"//input[@placeholder='Search']",
 }
+
+
