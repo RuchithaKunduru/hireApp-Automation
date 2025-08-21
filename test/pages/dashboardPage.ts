@@ -99,7 +99,7 @@ async getAppliedJobCategory(): Promise<string> {
     await this.page.waitForTimeout(2000);
   }
 
-// ✅ Print all job role names
+//  Print all job role names
 async getAllJobRoleNames(): Promise<string[]> {
   const roles = await this.page.$$eval(
     dashbaordLocators.allJobRoleNames,
@@ -109,22 +109,22 @@ async getAllJobRoleNames(): Promise<string[]> {
   return roles;
 }
 
-// ✅ Check if a specific job role exists
+// Check if a specific job role exists
 async jobRoleExists(roleName: string): Promise<boolean> {
   return await this.page.isVisible(dashbaordLocators.jobRoleName(roleName));
 }
 
-// ✅ Get the text of a specific job role
+//  Get the text of a specific job role
 async getJobRoleByName(roleName: string): Promise<string | null> {
   const locator = this.page.locator(dashbaordLocators.jobRoleName(roleName));
 
-  // ✅ Wait until it's visible in DOM
+  //  Wait until it's visible in DOM
   await locator.waitFor({ state: "visible", timeout: 30000 });
 
   const text = await locator.textContent();
   console.log(`Job Role found for '${roleName}':`, text);
 
-  // ✅ Trim to avoid whitespace mismatch
+  //  Trim to avoid whitespace mismatch
   return text?.trim() || null;
 }
 async resetButton() {
@@ -140,7 +140,7 @@ async getSelectedJobCategory() {
 
 //search functionality
 async searchJobRole(searchText: string) {
-  console.log(`🔍 Searching for: '${searchText}'`);
+  console.log(` Searching for: '${searchText}'`);
   const searchBar = this.page.locator(dashbaordLocators.SearchBar);
   await searchBar.fill(searchText);
   await this.page.waitForSelector(dashbaordLocators.allJobRoleNames);
