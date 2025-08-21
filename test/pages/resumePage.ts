@@ -146,7 +146,7 @@ export class ResumePage {
 
   async clickUpdateButton(button1: string) {    
     // await this.page.click(resumeLocators.updateButton(button1));
-    await this.page.setViewportSize({ width: 1400, height: 500 });   
+    await this.page.setViewportSize({ width: 1920, height: 1080 });   
     await this.page.locator(resumeLocators.updateButton(button1)).click({ force: true });
 
   }  

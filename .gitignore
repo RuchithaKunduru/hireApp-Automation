@@ -1,3 +1,4 @@
 node_modules/
 .vscode/
+google-auth.json/
 /test-report/

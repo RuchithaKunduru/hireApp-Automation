@@ -26,11 +26,15 @@ export class InterviewPage {
     await this.page.locator(interviewLocators.copyLinkMsg);
   }
 
-  async selectDate(){
-    await this.page.click(interviewLocators.dateSchedule);
+  async selectCurrentDate(){
+    await this.page.click(interviewLocators.selectDate); 
+    const today = new Date().getDate();
+    // await this.page.click(interviewLocators.dateSchedule);
+    await this.page.locator(`xpath=${interviewLocators.dateCell(today)}`).click();
   }
 
   async selectStartTime(){
+    await this.page.locator('.react-datepicker__header').waitFor({ state: 'hidden' });
     await this.page.click(interviewLocators.startTimeSchedule);
   }
 
