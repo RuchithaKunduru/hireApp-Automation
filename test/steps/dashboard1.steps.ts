@@ -1,5 +1,5 @@
 import { When, Then } from '@cucumber/cucumber';
-import { DashboardPage } from '../pages/dashboardPage';
+import { DashboardPage } from '../pages/dashboardPage1';
 import dashboardData from '../test-data/dashbaord.json';
 import { Page, BrowserContext, } from "playwright";
 import { expect } from '@playwright/test';

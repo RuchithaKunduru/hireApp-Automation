@@ -1,5 +1,5 @@
 import { expect, Page } from '@playwright/test';
-import { dashbaordLocators } from '../locators/dashboard.locators';
+import { dashbaordLocators } from '../locators/dashboard1.locators';
 import {searchText,expectedATMEmail} from '../test-data/dashbaord.json';
 export class DashboardPage{
   constructor(private page: any) {}

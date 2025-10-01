@@ -1,6 +1,6 @@
 import { expect, Page } from '@playwright/test';
 import { viewDetailsLocators } from '../locators/viewdeatils.locators';
-import { dashbaordLocators } from '../locators/dashboard.locators';
+import { dashbaordLocators } from '../locators/dashboard1.locators';
 export class EditJdPage {
   constructor(private page: Page) {}
 

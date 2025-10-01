@@ -31,9 +31,9 @@ Then("user should be able to see link copied toast message", async function(){
     await createNewJobPage.copyLinkMessage();
 });
 
-When("user selects a date to schedule an interview", async function() {
+When("user selects the current date for scheduling an interview" ,{ timeout: 30000 }, async function() {
     const createNewJobPage = new InterviewPage(this.page!);
-    await createNewJobPage.selectDate();
+    await createNewJobPage.selectCurrentDate();
 });
 
 When("user selects the start time to schedule an interview", async function(){

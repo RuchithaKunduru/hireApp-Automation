@@ -36,8 +36,7 @@ Scenario: Validate Dropdowns of Interview Level on Resume Page
     # User Validates Schedule Interview Section
     Given user clicks on the "Schedule Interview" button
     And user should be able to see "Schedule Interview"
-    And user selects a date to schedule an interview
-    And user clicks button "20"
+    And user selects the current date for scheduling an interview
     And user should be able to see the "India Standard Time (UTC+5:30)"
     And user selects the start time to schedule an interview
     And user clicks on "Decrease hour" toggle button
